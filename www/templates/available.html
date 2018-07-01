@@ -1,0 +1,66 @@
+<ion-view title="Today's Trips" id="page4" ng-app="app" ng-controller="availableCtrl">
+  <ion-content padding="true" class="has-header">
+    <div class="row responsive-sm">
+      <div class="col col-10 col-center">
+        <h4>Filter</h4>
+      </div>
+      <div class="col">
+        <!-- <input type="text" placeholder="From" ng-model="find.from"> -->
+        <label class="item item-input item-select">
+          <div class="input-label">
+            From
+          </div>
+          <select ng-model="find.from">
+            <option></option>
+            <option>Clock Tower</option>
+            <option>Village House</option>
+            <option>Brookings Steps</option>
+            <option>Mallinkrodt</option>
+            <option>Airport</option>
+            <option>Loop</option>
+            <option>Schnucks</option>
+            <option>Target</option>
+            <option>Galleria</option>
+          </select>
+        </label>
+      </div>
+      <div class="col">
+        <!-- <input type="text" placeholder="To" ng-model="find.to"> -->
+        <label class="item item-input item-select">
+          <div class="input-label">
+            To
+          </div>
+          <select ng-model="find.to">
+            <option></option>
+            <option>Clock Tower</option>
+            <option>Village House</option>
+            <option>Brookings Steps</option>
+            <option>Mallinkrodt</option>
+            <option>Airport</option>
+            <option>Loop</option>
+            <option>Schnucks</option>
+            <option>Target</option>
+            <option>Galleria</option>
+          </select>
+        </label>
+      </div>
+      <!-- <div class="col">
+        <label class="item item-input">
+          <input type="text" placeholder="When" ng-model="find.when">
+        </label>
+      </div> -->
+    </div>
+    <hr style="margin-bottom: 20px;">
+    <ion-list id="available-list2">
+      <!-- ui-sref="tabsController.example()" -->
+      <ion-item ng-repeat="item in filteredItems = (items | filter : find)" ng-click="goToState(item)">
+        Leaving at {{item.when}} - {{item.from}} to {{item.to}}
+      </ion-item>
+      <ion-item ng-show="!filteredItems.length">
+        No cars found
+      </ion-item>
+    </ion-list>
+    <!-- <h1 id="available-heading5" style="color:#000000;">Can't find one?</h1>
+    <a ui-sref="tabsController.create()" id="available-button8" class="button button-positive button-block">Create!</a> -->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view title="Create Profile" id="page8" ng-controller="createProfileCtrl">
+  <ion-content padding="true" class="has-header">
+    <h1 id="createProfile-heading10" style="color:#000000;">Finish Your Profile</h1>
+    <form id="createProfile-form7" class="list">
+      <label class="item item-input" id="createProfile-input12">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="" ng-model="new_profile.name" required>
+      </label>
+      <label class="item item-input" id="createProfile-input12">
+        <span class="input-label">Description</span>
+        <input type="text" placeholder="" ng-model="new_profile.desc" required>
+      </label>
+      <label class="item item-input" id="createProfile-input13">
+        <span class="input-label">Cell Phone</span>
+        <input type="tel" placeholder="" ng-model="new_profile.phone" required>
+      </label>
+      <label class="item item-input" id="createProfile-input12">
+        <span class="input-label">Venmo</span>
+        <input type="text" placeholder="" ng-model="new_profile.venmo" required>
+      </label>
+      <label class="item item-input" id="createProfile-input12">
+        <span class="input-label">School</span>
+        <input type="text" placeholder="" ng-model="new_profile.school" required>
+      </label>
+      <label class="item item-input" id="createProfile-input12">
+        <span class="input-label">Year</span>
+        <input type="text" placeholder="" ng-model="new_profile.year" required>
+      </label>
+      <a id="createProfile-button16" class="button button-positive button-block" ng-click="addProfile()">Done!</a>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view title="Chat" id="page10" ng-app="app" ng-controller="chatCtrl">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="available-list2">
+      <ion-item ng-repeat="chat in chats">
+        <b>{{chat.sender}}:</b> {{chat.content}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="item item-input-inset" style="position: fixed; bottom: 0px; width: 100%">
+    <label class="item-input-wrapper">
+      <input type="text" id="newChatInput" placeholder="Send message" ng-model="newChat">
+    </label>
+    <button class="button button-small" ng-click="sendChat(newChat)">
+      <i class="icon ion-android-send"></i>
+    </button>
+  </div>
+</ion-view>
+<!-- <ion-view title="Example" id="page5" ng-app="app" ng-controller="ListCtrl">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="example-card21">
+      <ion-item class="item-avatar" id="example-list-item21">
+        <img src="img/XZiKOuBrTveVXbPXDk37_22049818_1702871453119588_6668283513137470507_n.jpg">
+        <h2>Kivanc Komesli</h2>
+        <p>Junior, School of Engineering</p>
+      </ion-item>
+      <div class="item item-body" id="example-list-item-container2">
+        <div id="example-markdown2" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">It's like "Crunch" but with a V</p>
+        </div>
+      </div>
+      <ion-item class="item-icon-left dark" id="example-list-item22">
+        <i class="icon ion-chatboxes"></i>(123) 456-7890</ion-item>
+      <ion-item class="item-icon-left dark" id="example-list-item23">
+        <i class="icon ion-social-usd"></i>komeslik</ion-item>
+    </div>
+    <div class="list card" id="example-card22">
+      <ion-item class="item-avatar" id="example-list-item24">
+        <img src="img/UTrMEIwQoi20OXPY0FyD_T24TTK9EU-U4M3LU8BA-54e062e34790-1024.png">
+        <h2>Tonya Jiang</h2>
+        <p>Junior, School of Engineering</p>
+      </ion-item>
+      <div class="item item-body" id="example-list-item-container3">
+        <div id="example-markdown3" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Power moves only</p>
+        </div>
+      </div>
+      <ion-item class="item-icon-left dark" id="example-list-item26">
+        <i class="icon ion-chatboxes"></i>(987) 654-3210</ion-item>
+      <ion-item class="item-icon-left dark" id="example-list-item27">
+        <i class="icon ion-social-usd"></i>Tonya-Jiang</ion-item>
+    </div>
+    <button id="example-button15" class="button button-positive button-block" ng-click="joinCar()">Join</button>
+  </ion-content>
+</ion-view> -->

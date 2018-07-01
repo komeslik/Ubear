@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title></title>
+    <!--  -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD2lyZitaJUcsrnYTOvmmPNTvLlXA9nTtU",
+        authDomain: "test-7422a.firebaseapp.com",
+        databaseURL: "https://test-7422a.firebaseio.com",
+        projectId: "test-7422a",
+        storageBucket: "test-7422a.appspot.com",
+        messagingSenderId: "689181714149"
+      };
+      firebase.initializeApp(config);
+
+    </script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.6.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.0/firebaseui.css" />
+
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script src="js/dateFormat.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding {
+        padding-top: 20px;
+      }
+
+      .manual-remove-top-padding {
+        padding-top: 0px;
+      }
+
+      .manual-remove-top-padding .scroll {
+        padding-top: 0px !important;
+      }
+
+      ion-list.manual-list-fullwidth div.list,
+      .list.card.manual-card-fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      ion-list.manual-list-fullwidth div.list>.item,
+      .list.card.manual-card-fullwidth>.item {
+        border-radius: 0px;
+        border-left: 0px;
+        border-right: 0px;
+      }
+
+      .show-list-numbers-and-dots ul {
+        list-style-type: disc;
+        padding-left: 40px;
+      }
+
+      .show-list-numbers-and-dots ol {
+        list-style-type: decimal;
+        padding-left: 40px;
+      }
+
+    </style>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/firebaseUI.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+  </head>
+
+  <body ng-app="app" animation="slide-left-right-ios7">
+    <div>
+      <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+        <ion-side-menu-content>
+          <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear ion-navicon" menu-toggle="left" id="menuCtrl" ng-show="showMenu"></button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+          <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left" id="side-menu21">
+          <ion-header-bar class="bar-stable">
+            <div class="title">Menu</div>
+          </ion-header-bar>
+          <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+            <ion-list id="menu-list3" data-componentid="list3">
+              <ion-item id="menu-list-item18" ui-sref="tabsController.available()" menu-close="" data-componentid="list-item18">Home</ion-item>
+              <!-- <ion-item id="menu-list-item14" ui-sref="edit()" menu-close="" data-componentid="list-item14">Account</ion-item> -->
+              <ion-item id="menu-list-item15" ui-sref="login()" menu-close="" data-componentid="list-item15">Log Out</ion-item>
+              <ion-item id="menu-list-item16" data-componentid="list-item16">Help</ion-item>
+              <ion-item id="menu-list-item17" data-componentid="list-item17">Report an Incident</ion-item>
+
+              <p style="margin-top: 20%; margin-left:20px"> You are currently: </p>
+              <p id="sign-in-status" style="margin-left:20px"></p>
+              <div id="account-details" style="display: none"></div>
+            </ion-list>
+          </ion-content>
+        </ion-side-menu>
+      </ion-side-menus>
+    </div>
+  </body>
+
+</html>

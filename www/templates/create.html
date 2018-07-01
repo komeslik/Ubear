@@ -1,0 +1,49 @@
+<ion-view title="Create" id="page3" ng-app="app" ng-controller="availableCtrl">
+  <ion-content padding="true" class="has-header">
+    <h1 id="create-heading6" style="color:#000000;">I want to go</h1>
+    <form id="create-form4" class="list">
+      <label class="item item-select" id="create-select3">
+        <span class="input-label">From</span>
+        <select ng-model="new.from">
+          <option value="Clock Tower">Clock Tower</option>
+          <option value="Village House">Village House</option>
+          <option value="Brookings Steps">Brookings Steps</option>
+          <option value="Mallinkrodt">Mallinkrodt</option>
+          <option value="Airport">Airport</option>
+          <option value="Loop">Loop</option>
+          <option value="Schnucks">Schnucks</option>
+          <option value="Target">Target</option>
+          <option value="Galleria">Galleria</option>
+        </select>
+      </label>
+      <label class="item item-select" id="create-select4">
+        <span class="input-label">To</span>
+        <select ng-model="new.to">
+          <option value="Clock Tower">Clock Tower</option>
+          <option value="Village House">Village House</option>
+          <option value="Brookings Steps">Brookings Steps</option>
+          <option value="Mallinkrodt">Mallinkrodt</option>
+          <option value="Airport">Airport</option>
+          <option value="Loop">Loop</option>
+          <option value="Schnucks">Schnucks</option>
+          <option value="Target">Target</option>
+          <option value="Galleria">Galleria</option>
+        </select>
+      </label>
+      <h1 id="create-heading7" style="color:#000000;">leaving</h1>
+      <label class="item item-input" id="create-input5">
+        <span class="input-label">around</span>
+        <input type="time" placeholder="" ng-model="new.when">
+      </label>
+      <!-- <h1 id="create-heading8" style="color:#000000;">with</h1>
+    </form>
+    <div id="create-button-bar2" class="button-bar">
+      <button id="create-button12" class="button button-positive button-block">1</button>
+      <button id="create-button13" class="button button-positive button-block">2</button>
+      <button id="create-button14" class="button button-positive button-block">3</button>
+    </div>
+    <h1 id="create-heading9" style="color:#000000;">other people.</h1> -->
+      <a id="available-button8" class="button button-positive button-block" ng-click="addItem()">Create!</a>
+
+  </ion-content>
+</ion-view>
