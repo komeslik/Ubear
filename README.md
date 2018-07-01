@@ -3,4 +3,5 @@
 
 
 Ubear is a simple carpooling app for WashU students to share Uber/Lyft/Taxi rides.
-Ubear is built using Ionic.
+
+Ubear is built using the Ionic framework.
